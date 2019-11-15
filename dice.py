@@ -1,3 +1,6 @@
+# by ariana daney
+# last modified november 15, 2019
+# dice roller
 from tkinter import *
 
 root = Tk()
