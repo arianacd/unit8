@@ -33,6 +33,14 @@ root = Tk()
 
 
 # ex. 3
-degree_f = Label(root, text="degrees F")
-degree_f.grid(row=)
+degree_f = Label(root, text="degrees F:")
+degree_f.grid(row=1, column=1)
+degree_c = Label(root, text="degrees C:")
+degree_c.grid(row=2, column=1)
+f_input = Entry(root)
+f_input.grid(row=1, column=2)
+result = Label(root, text="0")
+result.grid(row=2, column=2)
+convert_button = Button(root, text="convert")
+convert_button.grid(row=1, column=2, columnspan=2)
 root.mainloop()
