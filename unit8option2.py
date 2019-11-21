@@ -5,6 +5,7 @@
 
 from tkinter import *
 root = Tk()
+root.configure(background="light pink")
 
 
 def add_zero():
@@ -122,10 +123,14 @@ def equal():
 
 title = Label(root, text="Calculator", font="Helvetica 24")
 title.grid(row=1, column=1, columnspan=4)
+title.configure(background="light pink")
+title.configure(foreground="dark blue")
 
 display_result = StringVar()
 result_bar = Entry(root, textvariable=display_result, justify="right")
 result_bar.grid(row=2, column=1, columnspan=4)
+result_bar.configure(background="light pink")
+result_bar.configure(foreground="dark blue")
 
 clear_button = Button(root, text="Clear", width=5, font="Helvetica 14", command=clear)
 clear_button.grid(row=3, column=1)
@@ -168,6 +173,7 @@ one.grid(row=6, column=1)
 
 two = Button(root, text="2", width=5, font="Helvetica 14", command=add_two)
 two.grid(row=6, column=2)
+two.configure(background="light pink")
 
 three = Button(root, text="3", width=5, font="Helvetica 14", command=add_three)
 three.grid(row=6, column=3)
@@ -183,6 +189,7 @@ decimal.grid(row=7, column=2)
 
 equals = Button(root, text="=", width=11, font="Helvetica 14", command=equal)
 equals.grid(row=7, column=3, columnspan=2)
+
 
 
 root.mainloop()
